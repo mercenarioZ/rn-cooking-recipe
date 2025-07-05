@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.DS_Store
+.vscode/
+
+# mobile specific
+mobile/.expo/
+mobile/android/
+mobile/ios/
+mobile/.expo_shared/

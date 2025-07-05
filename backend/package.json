@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "dev:direct": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "1.0.0",
+    "cors": "2.8.5",
+    "cron": "4.3.0",
+    "dotenv": "16.5.0",
+    "drizzle-orm": "0.44.2",
+    "express": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.3",
+    "@types/node": "24.0.10",
+    "drizzle-kit": "0.31.4",
+    "nodemon": "3.1.10",
+    "ts-node": "10.9.2",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3"
+  }
+}
