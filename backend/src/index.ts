@@ -1,6 +1,6 @@
 import express from "express";
 import { ENV } from "./config/env.js";
-import { db } from "./config/db";
+import { db } from "./config/db.js";
 import { favoritesTable } from "./db/schema";
 import { and, eq } from "drizzle-orm";
 
