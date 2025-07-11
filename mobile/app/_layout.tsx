@@ -1,16 +1,15 @@
-import { Stack } from "expo-router";
+import { COLORS } from "@/constants/colors";
+import { ClerkProvider } from "@clerk/clerk-expo";
+import { tokenCache } from "@clerk/clerk-expo/token-cache";
+import { Slot } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function RootLayout() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <Stack
-        screenOptions={{
-          headerShown: false,
-          contentStyle: { flex: 1 },
-          animation: "fade_from_bottom",
-        }}
-      />
-    </SafeAreaView>
+    <ClerkProvider tokenCache={tokenCache}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background}}>
+        <Slot />
+      </SafeAreaView>
+    </ClerkProvider>
   );
 }

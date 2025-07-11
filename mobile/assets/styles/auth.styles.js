@@ -59,7 +59,7 @@ export const authStyles = StyleSheet.create({
   eyeButton: {
     position: "absolute",
     right: 16,
-    top: 16,
+    top: 14,
     padding: 4,
   },
   authButton: {
