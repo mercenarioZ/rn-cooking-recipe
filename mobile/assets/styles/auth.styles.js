@@ -87,6 +87,7 @@ export const authStyles = StyleSheet.create({
     color: COLORS.textLight,
   },
   link: {
+    fontSize: 16,
     color: COLORS.primary,
     fontWeight: "600",
   },
