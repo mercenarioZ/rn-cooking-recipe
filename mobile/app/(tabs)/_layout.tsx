@@ -36,8 +36,9 @@ const TabsLayout = () => {
           height: 90,
         },
         tabBarLabelStyle: {
-          fontSize: 14,
+          fontSize: 12,
           fontWeight: "600",
+          marginTop: 1,
         },
       }}
     >
