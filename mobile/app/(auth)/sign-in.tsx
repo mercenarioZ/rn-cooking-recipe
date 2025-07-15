@@ -74,7 +74,7 @@ const SignInScreen = () => {
         >
           <View style={authStyles.imageContainer}>
             <Image
-              source={require("@/assets/images/newton.png")}
+              source={require("@/assets/images/food.png")}
               style={authStyles.image}
               contentFit="contain"
             />
@@ -98,7 +98,7 @@ const SignInScreen = () => {
             </View>
 
             {/* Password input */}
-            <View>
+            <View style={authStyles.inputContainer}>
               <TextInput
                 placeholder="Password"
                 style={authStyles.textInput}
